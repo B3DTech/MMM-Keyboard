@@ -105,7 +105,7 @@ Module.register("MMM-Keyboard", {
     if (noti == "DOM_OBJECTS_CREATED") {
       this.log("MMM-Keyboard: Initializing keyboard");
       //Add event listener on first implementation of keyboard.
-    } else (noti == "SHOW_KEYBOARD") {
+    } else if (noti == "SHOW_KEYBOARD") {
       console.log("MMM-Keyboard recognized a notification: " + noti + JSON.stringify(payload));
       this.log("Activating Keyboard!");
       this.currentKey = payload.key;
